@@ -55,17 +55,10 @@ if (process.argv[2] === "spotify-this-song") {
 
     var songs = data.tracks.items;
       for (var i = 0; i < songs.length; i++) {
-        // console.log(i);
         console.log("album: " + songs[i].album.name);
         console.log("artist(s): " + songs[i].artists[0].name);
         console.log("\n------------\n");
         console.log(songs[i].name);
-      // var artist =  songs[i].artists;
-      //  for (var i = 0; i < artist.length; i++) {
-      //    console.log(artist[i].name);
-        //  console.log(songs[i].artists.name);
-        // console.log(data);
-        // }
       }
 
     });
